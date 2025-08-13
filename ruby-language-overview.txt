@@ -1,0 +1,128 @@
+## What is Ruby?
+
+Ruby is a dynamic, open-source, object-oriented programming language with a focus on simplicity and productivity. It has an elegant syntax that is easy to read and write.
+
+Everything in Ruby is an object.
+
+It supports multiple paradigms: object-oriented, procedural, and functional.
+
+Created to make programming fun and human-friendly.
+
+######################################################################################################
+
+## History of Ruby
+
+Created by: Yukihiro “Matz” Matsumoto
+
+Released in: 1995 (first public release)
+
+Inspiration from: Perl, Smalltalk, Eiffel, Ada, and Lisp
+
+######################################################################################################
+
+## Key Features
+
+Pure Object-Oriented: Even numbers, classes, and nil are objects.
+
+Garbage Collection: Automatic memory management.
+
+Duck Typing: Focus on what an object can do, not what it is.
+
+Metaprogramming: You can write code that writes code.
+
+DSL Support: Ruby is ideal for building Domain Specific Languages.
+
+Large Community: Particularly strong in web development due to Ruby on Rails.
+
+######################################################################################################
+
+## Where is Ruby Used?
+
+Web Development: Ruby on Rails (used by GitHub, Shopify, Airbnb)
+
+Scripting and Automation
+
+Prototyping and MVPs
+
+DevOps: Used in Chef and Puppet
+
+Game development, data processing, and API backends
+
+######################################################################################################
+
+## Ruby Environment Tools
+
+# RVM (Ruby Version Manager):
+
+A command-line tool that lets you install, manage, and switch between multiple Ruby versions.
+
+Also manages gemsets (isolated gem environments per project).
+
+Good for quick setup, used widely in earlier Ruby communities.
+
+Advantage: All-in-one (manages Ruby and gemsets)
+
+Drawback: Modifies your shell and can conflict with other tools.
+
+# rbenv (Ruby Environment):
+
+A lighter alternative to RVM.
+
+Uses shims to intercept Ruby commands and select the correct version.
+
+Often considered cleaner and more modular.
+
+Advantage: Minimal, works well with tools like ruby-build
+
+Drawback: Doesn’t manage gemsets natively
+
+######################################################################################################
+
+## IRB (Interactive Ruby)
+
+A REPL (Read-Eval-Print Loop) for Ruby.
+
+Lets you execute Ruby code line-by-line interactively in the terminal.
+
+Great for experimenting, debugging, and learning.
+
+######################################################################################################
+
+## Is it compiled language or interpreted?
+
+Ruby is primarily an interpreted language, not compiled.
+
+# What Does That Mean?
+
+Interpreted Language: Code is executed line by line by an interpreter, without being compiled into machine code first.
+
+In Ruby’s case, the interpreter reads and executes your code at runtime.
+
+# Under the Hood
+Ruby code typically runs on a virtual machine through an interpreter. There are several Ruby interpreters:
+
+MRI (Matz’s Ruby Interpreter)   ->  Default Ruby implementation (also called CRuby). Interpreted and written in C.
+YJIT / MJIT                     ->  Just-In-Time compilers added to MRI for performance improvements (starting Ruby 3).
+JRuby                           ->  Ruby implementation on the Java Virtual Machine (JVM) — compiles to Java bytecode.
+TruffleRuby                     ->  High-performance Ruby on the GraalVM — uses ahead-of-time and JIT compilation.
+mruby                           ->  Lightweight Ruby implementation for embedding, compiles to bytecode.
+
+######################################################################################################
+
+## Ruby vs Python vs JavaScript
+
+| Feature                          | **Ruby**                                                                           | **Python**                                    | **JavaScript**                                                       |
+| -------------------------------- | ---------------------------------------------------------------------------------- | --------------------------------------------- | -------------------------------------------------------------------- |
+| 🧠 **Paradigm**                  | Object-Oriented (everything is an object), supports procedural & functional styles | Multi-paradigm: procedural, OO, functional    | Multi-paradigm: functional, OO, imperative                           |
+| 🗣️ **Interpreted or Compiled?**  | Interpreted (with optional JIT in Ruby 3+)                                         | Interpreted (with optional JIT in PyPy)       | Interpreted (but engines like V8 compile to machine code at runtime) |
+| 🚀 **Runtime**                   | MRI (YARV), JRuby, TruffleRuby                                                     | CPython (main), PyPy, Jython                  | V8 (Chrome/Node.js), SpiderMonkey (Firefox)                          |
+| 🛠️ **Used for**                  | Web apps (Rails), scripts, DevOps, APIs                                            | AI, ML, scripting, data science, automation   | Web apps (front and back-end), mobile apps, APIs                     |
+| 🌍 **Primary Environment**       | Server-side                                                                        | Server-side, scripting, automation            | Primarily browser, but also server-side (Node.js)                    |
+| 📈 **Performance**               | Medium (improved with JIT)                                                         | Medium (PyPy is faster than CPython)          | High (thanks to JIT in modern JS engines like V8)                    |
+| 🔁 **REPL Available?**           | Yes (`irb`, `pry`)                                                                 | Yes (`python`, `ipython`)                     | Yes (`node`, browser console)                                        |
+| 💎 **Strengths**                 | Developer happiness, elegant syntax, Rails                                         | Readability, huge ecosystem for data/AI       | Ubiquity (runs everywhere), async support, speed                     |
+| 🪵 **Weaknesses**                | Slower than some compiled/interpreted peers                                        | Slower in raw performance than compiled langs | Language quirks, callback hell (reduced with `async/await`)          |
+| 🧪 **Testing Libraries**         | RSpec, Minitest                                                                    | unittest, pytest                              | Jest, Mocha, Jasmine                                                 |
+| 🧰 **Version Management**        | `rbenv`, `RVM`                                                                     | `pyenv`, `virtualenv`                         | `nvm`, `volta`                                                       |
+| 🧩 **Package Managers**          | RubyGems, Bundler                                                                  | pip, poetry                                   | npm, yarn                                                            |
+| 📚 **Learning Curve**            | Medium (less used in colleges)                                                     | Easy for beginners                            | Easy to moderate (quirks with scope and async)                       |
