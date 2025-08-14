@@ -1,0 +1,18 @@
+Interesting Stuff / Gotchas:
+
+- Mutable default arguments: In Ruby, defaults like [] or {} are re-created each call, unlike Python where they persist — so no accidental state leaks.
+
+- *args and **kwargs can be forwarded in Ruby 2.7+ using the new shorthand:
+
+    def wrapper(*args, **kwargs, &block)
+        real_method(*args, **kwargs, &block)
+    end
+
+- Ruby 3 introduced Argument Forwarding Operator:
+
+    def wrapper(...)
+        real_method(...)
+    end
+    This forwards everything — positional, keyword, block — without naming them.
+
+- Overriding methods: When overriding, maintain the same argument signature unless intentionally changing it, otherwise you'll break callers.

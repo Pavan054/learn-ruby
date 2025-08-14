@@ -1,0 +1,21 @@
+In Ruby, everything is an object, including classes and modules.
+
+Instance variables are per object; class variables are shared.
+
+Class methods are stored in the singleton class of the object.
+
+initialize is not technically a constructor — new is — but new delegates to initialize.
+
+object_id, equal?, ==, and eql? differ in meaning.
+
+Everything is an object — even classes are instances of Class.
+
+Ruby has singleton classes that make per-object methods possible.
+
+You can define classes at runtime with Class.new.
+
+Open classes are a double-edged sword — flexible but dangerous.
+
+“Abstract classes” are a convention, not enforced by Ruby.
+
+Namespacing is often done with nested classes or modules.
