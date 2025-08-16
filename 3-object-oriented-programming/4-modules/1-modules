@@ -1,0 +1,15 @@
+Modules
+
+What are Modules?
+
+    - A collection of methods, constants, and classes.
+    - Cannot be instantiated (unlike classes).
+    - Used for:
+        - Namespaces → avoid naming conflicts.
+        - Mixins → add reusable behavior to classes.
+        - Grouping constants logically.
+
+Interview Tip:
+If they ask “What’s the difference between a class and a module?” →
+    - Classes can be instantiated, support inheritance.
+    - Modules cannot be instantiated, no inheritance, but can be mixed in.
