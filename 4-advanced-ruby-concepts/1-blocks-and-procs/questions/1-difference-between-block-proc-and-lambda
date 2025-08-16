@@ -1,0 +1,21 @@
+Difference between Block, Proc, and Lambda
+
+Block
+- Anonymous chunk of code between {} or do..end.
+- Not an object by itself.
+- Can only be passed implicitly to methods (one at a time).
+- Uses yield or &block to execute.
+
+Proc
+- Object version of a block (Proc.new or proc).
+- Can be stored in variables, passed around, reused.
+- Argument checking is lenient (extra/missing args become nil).
+- return exits from the enclosing method.
+
+Lambda
+- A special kind of Proc (lambda or ->).
+- Argument checking is strict (must match).
+- return exits only from the lambda itself, not the method.
+
+Interview one-liner:
+“A block is just syntax, a Proc is a block wrapped as an object, and a lambda is a stricter Proc that behaves more like a method.”
