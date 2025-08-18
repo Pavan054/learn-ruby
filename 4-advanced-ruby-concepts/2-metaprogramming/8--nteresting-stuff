@@ -1,0 +1,16 @@
+Rails heavily uses metaprogramming:
+    -   Dynamic finders (find_by_name) → via method_missing.
+    -   Associations (has_many, belongs_to) → via class_eval.
+    -   Validations (validates :name) → via DSLs (instance_eval).
+
+method_missing vs define_method:
+    -   method_missing is flexible but slower (checked every time).
+    -   define_method actually creates methods (faster after creation).
+    -   Rails moved from method_missing → define_method for performance.
+
+Security Concerns:
+    -   Avoid eval in real apps — it can execute malicious input.
+    -   Prefer safe metaprogramming (send, define_method).
+
+Good Interview Line:
+    -   “Metaprogramming makes Ruby flexible and expressive, but it should be used carefully. Rails uses it to create clean DSLs, but overusing it can make code harder to debug.”

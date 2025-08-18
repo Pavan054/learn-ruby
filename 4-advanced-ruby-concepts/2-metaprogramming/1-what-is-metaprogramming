@@ -1,0 +1,7 @@
+What is Metaprogramming?
+
+Metaprogramming means writing code that writes code — Ruby lets you manipulate classes, methods, and objects at runtime.
+This is widely used in Rails (ActiveRecord, DSLs, validations, etc.).
+
+Interview one-liner:
+“Metaprogramming in Ruby lets us dynamically create or modify methods, classes, and behavior at runtime, which is the foundation of Rails magic.”
