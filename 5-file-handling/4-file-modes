@@ -1,0 +1,17 @@
+File Modes:
+
+"r" → read-only
+
+"w" → write (truncate existing)
+
+"a" → append
+
+"r+" → read & write
+
+"w+" → read & write (truncate)
+
+"a+" → read & write (append)
+
+"b" → binary mode (e.g., "rb")
+
+Interesting: Windows requires "rb" for binary files (images, PDFs), otherwise line endings may change.
