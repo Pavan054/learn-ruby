@@ -1,0 +1,7 @@
+Concurrency vs Parallelism
+
+Concurrency: Multiple tasks make progress by interleaving execution (not necessarily at the same time).
+
+Parallelism: Multiple tasks run simultaneously (true parallel execution on multi-core CPUs).
+
+Ruby (MRI) supports concurrency well, but parallelism is limited due to the Global Interpreter Lock (GIL).

@@ -1,0 +1,18 @@
+Interview Nuggets:
+
+MRI Ruby has GIL → concurrency but not parallelism.
+
+JRuby / TruffleRuby → no GIL, so parallel threads possible.
+
+Threads → good for I/O, not for CPU-heavy.
+
+Fibers → deterministic concurrency (used for async I/O, coroutines).
+
+Ractors → solve parallelism in Ruby 3 by isolating memory.
+
+Patterns → Producer-Consumer, Futures, Actor Model (ask about concurrent-ruby).
+
+Rails Connection: Rails 5+ uses multithreaded servers (Puma) → concurrency handling is critical.
+
+Smart Interview Line:
+“In MRI Ruby, I’d use Threads for I/O-bound tasks, Processes or Ractors for CPU-bound tasks, and Fibers for async programming. For production-level concurrency, I’d often use the concurrent-ruby gem or leverage JRuby if true parallelism is needed.”

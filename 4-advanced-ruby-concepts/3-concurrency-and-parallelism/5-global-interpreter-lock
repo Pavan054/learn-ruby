@@ -1,0 +1,10 @@
+Global Interpreter Lock (GIL)
+
+MRI Ruby uses a GIL (Global Interpreter Lock) → only one thread executes Ruby code at a time.
+
+Reason: Simplifies memory management.
+
+But I/O-bound tasks benefit (while one thread waits, another can run).
+
+Interview Question: “Does Ruby support parallel threads?”
+Answer: “In MRI Ruby, threads run concurrently but not in parallel due to GIL. For true parallelism, we use Ractors or JRuby.”
